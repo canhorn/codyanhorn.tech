@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="{{ site.lang | default: "en-US" }}">
+
+<head>
+    <meta charset="UTF-8">
+
+    {% seo %}
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#157878">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <link
+        rel="stylesheet"
+        href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+    />
+    <link rel="stylesheet" href="{{ '/assets/css/style.css?v=' | append: site.github.build_revision | relative_url }}">
+    <link rel="stylesheet" href="{{ '/css/main.css?v=' | append: site.github.build_revision | relative_url }}">
+</head>
+
+<body>
+    <aside>
+        <div class="container">
+            <nav>
+                <ul>
+                {% for item in site.data.navigation %}
+                    <li>
+                        <a href="{{ item.link }}" {% if page.url == item.link %}style="color: gray; border-bottom: gray solid;"{% endif %}>
+                        {{ item.name }}
+                        </a>
+                    </li>
+                {% endfor %}
+                </ul>
+                </li>
+                </ul>
+            </nav>
+        </div>
+    </aside>
+    <main id="content" class="main-content" role="main">
+        {{ content }}
+    </main>
+</body>
+
+</html>
