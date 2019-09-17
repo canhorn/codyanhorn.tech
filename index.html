@@ -5,16 +5,6 @@ title: Cody's Personal Blog
 
 <style>
     @import url(https://fonts.googleapis.com/css?family=Lato);
-
-    /* CENTERING */
-    .centered {
-        position: fixed;
-        top: 50%;
-        left: 50%;
-        /* bring your own prefixes */
-        transform: translate(-50%, -50%);
-    }
-
     /* /end */
     body {
         background-color: white;
@@ -23,15 +13,13 @@ title: Cody's Personal Blog
         background-repeat: no-repeat;
     }
 
+    main {
+        margin-top: 1em;
+    }
+
     h3 {
         position: relative;
         left: 45%;
-    }
-
-    /* THE FRONT */
-    .front {
-        background-image: url(image/bc-front.png);
-        background-size: cover;
     }
 
     /* /end */
@@ -46,10 +34,13 @@ title: Cody's Personal Blog
     .back p,
     .back .font-a-icons {
         color: #000;
-        font-family: "Lato";
-        margin-left: 30%;
+        font-family: 'Lato';
+        margin-left: 35%;
         line-height: 90%;
-        padding-top: 0.3em;
+    }
+    .icon-box-group {
+        margin-top: 5%;
+        margin-left: 35%;
     }
 
     .back h1 {
@@ -59,7 +50,7 @@ title: Cody's Personal Blog
     .back p {
         font-size: 16px;
         padding-bottom: 15px;
-        width: 35%;
+        padding-top: 0.5em;
         border-bottom: 2px solid #000;
     }
 
@@ -102,14 +93,13 @@ title: Cody's Personal Blog
     }
 
     .back .icon-box {
-        position: relative;
         color: #000;
         font-size: 24px;
         height: 45px;
         width: 45px;
         padding: 5px;
         top: 45px;
-        left: 30%;
+        left: 35%;
         display: inline-block;
         border: 2px solid #000;
         margin: 5px;
@@ -125,166 +115,60 @@ title: Cody's Personal Blog
         color: #fff;
     }
 
-    /* /end */
-    /* THE FLIP EFFECT */
-    /* entire container, keeps perspective */
-    .flip-container {
-        perspective: 1000px;
-    }
-
-    /* flip the pane when hovered */
-    .flip-container > .flipped .flipper,
-    .flip-container.flipped .flipper {
-        transform: rotateY(180deg);
-        /* cursor: pointer; */
-    }
-
-    .flip-container,
-    .front,
     .back {
         height: 350px;
-        width: 600px;
-    }
-
-    .flipper {
-        transition: 0.5s;
-        transform-style: preserve-3d;
-        position: relative;
-    }
-
-    .front,
-    .back {
-        backface-visibility: hidden;
-        position: absolute;
-    }
-
-    .front {
-        z-index: 2;
-        /* firefox 31 */
-        transform: rotateY(0deg);
     }
 
     .back {
         background-color: #000;
     }
-
-    .back {
-        transform: rotateY(180deg);
-    }
-
-    .vertical.flip-container {
-        position: relative;
-    }
-
-    .vertical .back {
-        transform: rotateX(180deg);
-    }
-
-    .vertical.flip-container .flipper {
-        transform-origin: 100% 400x;
-    }
-
-    .vertical.flip-container > .flipped .flipper {
-        transform: rotateX(-180deg);
-    }
 </style>
 
-<div id="flip-container" class="flip-container centered">
-    <div class="flipper">
-        <div class="front"></div>
-        <div class="back">
-            <h1>Cody's Personal Blog</h1>
-            <p>Personal Website</p>
-            <div class="font-a-icons">
-                <div class="icon-group">
-                    <div class="icon-group">
-                        <span class="bold">E: </span>
-                        <a
-                            id="info-email"
-                            class="contact"
-                            href="mailto:cody.anhorn+blog@hotmail.com"
-                            target="_top"
-                        >
-                            cody.anhorn@hotmail.com
-                        </a>
-                    </div>
-                    <div class="icon-group">
-                        <a
-                            id="blog"
-                            class="contact"
-                            href="/blog.html"
-                            target="_top"
-                        >
-                            Blog
-                        </a>
-                    </div>
-                    <div class="icon-group">
-                        <a
-                            class="contact"
-                            href="https://www.ehzgames.studio"
-                            title="EventHorizon Games Studio Website"
-                            target="_blank"
-                        >
-                            EHZGames.Studio
-                        </a>
-                    </div>
-                </div>
-            </div>
+<div class="back">
+    <h1>Cody's Personal Blog</h1>
+    <p>Personal Website</p>
+    <div class="font-a-icons">
+        <div class="icon-group">
+            <span class="bold">E: </span>
             <a
-                class="icon-box"
-                href="https://twitter.com/CodyAnhorn"
-                target="_blank"
+                id="info-email"
+                class="contact"
+                href="mailto:cody.anhorn+blog@hotmail.com"
+                target="_top"
             >
-                <i class="fab fa-twitter"></i>
+                cody.anhorn@hotmail.com
             </a>
-            <a
-                class="icon-box"
-                href="https://discord.gg/gYs8YMy"
-                target="_blank"
-            >
-                <i class="fab fa-discord"> </i>
+        </div>
+        <div class="icon-group">
+            <a id="blog" class="contact" href="/blog.html" target="_top">
+                Blog
             </a>
-            <!-- <a class="icon-box" href="https://codepen.io/eventhorizongames/" target="_blank"><i class="fa fa-codepen"></i></a> -->
+        </div>
+        <div class="icon-group">
             <a
-                class="icon-box"
-                href="https://github.com/canhorn"
+                class="contact"
+                href="https://www.ehzgames.studio"
+                title="EventHorizon Games Studio Website"
                 target="_blank"
             >
-                <i class="fab fa-github"></i>
+                EHZGames.Studio
             </a>
         </div>
     </div>
+    <div class="icon-box-group">
+        <a
+            class="icon-box"
+            href="https://twitter.com/CodyAnhorn"
+            target="_blank"
+        >
+            <i class="fab fa-twitter"></i>
+        </a>
+        <a class="icon-box" href="https://discord.gg/gYs8YMy" target="_blank">
+            <i class="fab fa-discord"> </i>
+        </a>
+        <!-- <a class="icon-box" href="https://codepen.io/eventhorizongames/" target="_blank"><i class="fa fa-codepen"></i></a> -->
+        <a class="icon-box" href="https://github.com/canhorn" target="_blank">
+            <i class="fab fa-github"></i>
+        </a>
+    </div>
 </div>
-<script>
-    var flipContainer = document.getElementById("flip-container");
-    var allAnchorTags = document.getElementsByTagName("a");
-    var autoFlipTimeout = 0;
-    var linkedClicked = false;
-
-    for (let index = 0; index < allAnchorTags.length; index++) {
-        const element = allAnchorTags[index];
-        element.addEventListener("click", function(event) {
-            linkedClicked = true;
-        });
-    }
-
-    function autoFlip() {
-        autoFlipTimeout = setTimeout(function() {
-            flipContainer.classList.add("flipped");
-        }, 3500);
-    }
-    flipContainer.addEventListener("click", function() {
-        if (linkedClicked) {
-            linkedClicked = false;
-            return;
-        }
-        clearTimeout(autoFlipTimeout);
-        if (flipContainer.classList.contains("flipped")) {
-            flipContainer.classList.remove("flipped");
-            autoFlip();
-        } else {
-            flipContainer.classList.add("flipped");
-        }
-    });
-    autoFlip();
-</script>
