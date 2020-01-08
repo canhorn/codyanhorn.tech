@@ -3,6 +3,7 @@ layout: post
 author: Cody Merritt Anhorn
 title: What is a Behavior Tree?
 ---
+
 ## In the context of a Video Game
 It is a graph that dictates the state transition an Actor or Game Agent will make.
 
