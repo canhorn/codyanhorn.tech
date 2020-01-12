@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="robots" content="noindex" />
+        <title>{{page.title}}</title>
+        {% include analytics.html %}
+    </head>
+
+    <body>
+        {{ content }}
+        <script>
+            window.onload = function() {
+                if (url) {
+                    setTimeout(() => {
+                        window.location = url;
+                    }, 1000);
+                }
+            };
+        </script>
+    </body>
+</html>

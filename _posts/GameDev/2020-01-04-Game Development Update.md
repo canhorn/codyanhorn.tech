@@ -4,7 +4,6 @@ author: Cody Merritt Anhorn
 title: Game Development 2020.01.04
 ---
 
-## Synopsis
 Worked on getting a VoxEdit export into the game. I plan on using VoxEdit to create my Voxel art models. Since VoxEdit comes with a rigger and animation engine it should help to stream line the process a bit.
 
 The process was pretty straight forward. Was just adding the model to the asset server and creating a Asset and using it on an Client Entity. I did have to fix a single bug and added a few features to the client as well.
