@@ -4,7 +4,9 @@ author: Cody Merritt Anhorn
 title: You, PowerShell Core, and the Prompt (Windows)
 ---
 
-We will go over how to create a new promp display for PowerShell Core (Windows).
+We will go over how to create a new prompt display for PowerShell Core (Windows).
+
+## How To 
 
 First you will need to navigate to your PowerShell directory, by default mine was located in the Documents folder of my Users profile, ~\Documents\PowerShell.
 
@@ -67,7 +69,7 @@ function Write-BranchName () {
 
 The Default Prompt:
 
-~~~powershell
+~~~ powershell
 function prompt {
     "PS $($ExecutionContext.SessionState.Path.CurrentLocation)$('>' * ($nestedPromptLevel + 1)) "
 }
