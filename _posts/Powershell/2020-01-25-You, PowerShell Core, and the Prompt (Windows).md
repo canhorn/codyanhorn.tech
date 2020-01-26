@@ -18,7 +18,7 @@ To override/change the prompt you just need to create a function prompt, with a 
 
 ## Examples
 
-My Personal Prompt, requires git:
+***My Personal Prompt, requires git:***
 
 ~~~ powershell
 # Override the prompt
@@ -67,7 +67,7 @@ function Write-BranchName () {
 
 ~~~
 
-The Default Prompt:
+***The Default Prompt:***
 
 ~~~ powershell
 function prompt {
@@ -75,6 +75,6 @@ function prompt {
 }
 ~~~
 
-Reference Links:
+***Reference Links:***
 
-- https://stackoverflow.com/questions/1287718/how-can-i-display-my-current-git-branch-name-in-my-powershell-prompt
+***--*** https://stackoverflow.com/questions/1287718/how-can-i-display-my-current-git-branch-name-in-my-powershell-prompt
