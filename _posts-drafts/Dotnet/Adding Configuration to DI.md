@@ -68,13 +68,16 @@ using EventHorizon.Platform.Data;
 
 namespace EventHorizon.Plaform.Bot 
 {
-    private readonly TwitchSettings _twitchSettings;
-    
-    // Here is how to get the value from DI
-    public BotController(IOptions<TwitchSettings> twitchSettings)
+    public class BotController
     {
-        _twitchSettings = twitchSettings.Value;
+        private readonly TwitchSettings _twitchSettings;
+
+        // Here is how to get the value from DI
+        public BotController(IOptions<TwitchSettings> twitchSettings)
+        {
+            _twitchSettings = twitchSettings.Value;
+        }
+        // ...
     }
-    // ...
 }
 ~~~
