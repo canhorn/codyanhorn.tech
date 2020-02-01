@@ -7,7 +7,8 @@ body {
     -webkit-font-smoothing: antialiased;
 }
 
-td, th {
+td,
+th {
     padding: 5px;
 }
 
@@ -70,6 +71,32 @@ time {
     margin: 0 auto;
 }
 
+.skip-main {
+    left: -999px;
+    position: absolute;
+    top: auto;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    z-index: -999;
+}
+a.skip-main:focus,
+a.skip-main:active {
+    // color: #fff;
+    color: $nav-color;
+    background-color: $header-nav;
+    left: auto;
+    top: auto;
+    width: 30%;
+    height: auto;
+    overflow: auto;
+    margin: 10px 35%;
+    padding: 5px;
+    text-align: center;
+    font-size: 1.2em;
+    z-index: 999;
+}
+
 /* Aside */
 
 aside {
@@ -121,7 +148,30 @@ aside {
     }
 }
 
+.bold {
+    font-weight: bold;
+}
+
 footer {
     text-align: center;
     padding: 40px;
+
+    & .contact {
+        color: inherit;
+    }
+}
+
+.signature {
+    &__social {
+        &--icon {
+            font-size: 2em;
+            color: black;
+        }
+    }
+    & a {
+        text-decoration: none;
+    }
+    & a:hover {
+        text-decoration: none;
+    }
 }

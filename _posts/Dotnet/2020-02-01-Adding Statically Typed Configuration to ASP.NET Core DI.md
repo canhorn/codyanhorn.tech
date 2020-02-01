@@ -1,10 +1,26 @@
 ---
 layout: post
 author: Cody Merritt Anhorn
-title: Adding Configuration to ASP.NET Core DI
+title: Adding Statically Typed Configuration to ASP.NET Core DI
 ---
 
-***appsettings.json***
+This is a short and sweet post, it should give you a general idea on how to add typed Configuration/Settings to the .NET Core/ASP.NET Core Dependency Injection container.
+
+## Setup 
+
+The setup is broken up into 4 files, with minimal necessary logic. 
+
+First is the configuration file appsettings.json, the only thing about this is that the object you want to make statically typed needs to be parsed from json and marshalled into a class.
+
+Second is the actual typed representation of the configuration, the TwitchSettings.cs property names correlates to the appsettings.json properties of the Twitch object.
+
+Third is to "Configure" the service layer of the ASP.NET Core application, this happens during startup in Startup.cs. The ***Configuration.GetSection*** parameter should point to the "Twitch" section in the appsettings.json file. 
+
+And finally to get access to the configuration you can use constructor injection, like so ***IOptions<TwitchSettings> twitchSettings***. This give you access to the configuration, an example can be seen below in ***BotController.cs***.
+
+## Example Code
+
+### ***appsettings.json***
 ~~~ json
 {
   "Twitch": {
@@ -15,7 +31,7 @@ title: Adding Configuration to ASP.NET Core DI
 }
 ~~~
 
-***TwitchSettings.cs***
+### ***TwitchSettings.cs***
 ~~~ csharp
 namespace EventHorizon.Platform.Data
 {
@@ -28,7 +44,7 @@ namespace EventHorizon.Platform.Data
 }
 ~~~
 
-***Startup.cs***
+### ***Startup.cs***
 ~~~ csharp
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
@@ -63,6 +79,7 @@ namespace EventHorizon.Platform
 }
 ~~~
 
+### ***BotController.cs***
 ~~~ csharp
 using EventHorizon.Platform.Data;
 
