@@ -4,4 +4,4 @@ author: Cody Merritt Anhorn
 title: Game Client Refactor
 ---
 
-Check back latter for more details
+Check back later for more details...
