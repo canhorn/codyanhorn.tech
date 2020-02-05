@@ -4,7 +4,7 @@ author: Cody Merritt Anhorn
 title: Game Development 020.02.012
 ---
 
-This post will only details a few things done, but a whole lot of work was done at a solution level for the Client, <a href="/2020/02/01/Game-Client-Refactor.html" title="Post detailing the Game Client Solution Refactor.">Game Client Refactor</a>.
+This post will only details a few things done, but a whole lot of work was done at a solution level for the Client, <a href="/2020/02/04/Game-Client-Refactor.html" title="Post detailing the Game Client Solution Refactor.">Game Client Refactor</a>.
 
 For bugs we were able to fix an issue with the rotation movement logic, so it will correctly orientation the agents to there target direction.
 
@@ -12,7 +12,7 @@ For bugs we were able to fix an issue with the rotation movement logic, so it wi
 
 ### Game Client Solution Refactor
 
-This was a huge change to the solution structure of the Game Client, and the finer details will be covered in this <a href="/2020/02/01/Game-Client-Refactor.html" title="Post detailing the Game Client Solution Refactor.">Game Client Refactor</a>.
+This was a huge change to the solution structure of the Game Client, and the finer details will be covered in this <a href="/2020/02/04/Game-Client-Refactor.html" title="Post detailing the Game Client Solution Refactor.">Game Client Refactor</a>.
 
 ### Added New Immortal Model
 
