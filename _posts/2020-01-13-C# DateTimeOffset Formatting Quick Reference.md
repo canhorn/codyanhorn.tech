@@ -52,10 +52,6 @@ Using <a href="https://dotnet.microsoft.com/platform/try-dotnet" target="_blank"
 | ***ffffff*** | | 213000 |
 | ***fffffff*** | | 2130000 |
 
-## References
-
-<a href="https://docs.microsoft.com/en-us/dotnet/standard/base-types/custom-date-and-time-format-strings">https://docs.microsoft.com/en-us/dotnet/standard/base-types/custom-date-and-time-format-strings</a>
-
 ## Code For Reference
 ~~~ csharp
 DateTimeOffset exampleDate = new DateTimeOffset(
@@ -144,3 +140,7 @@ foreach (var formatString in formatters)
     Console.WriteLine($"| ***{formatString}*** | | {formatted} |");
 }
 ~~~
+
+## References
+
+***--*** [docs.microsoft.com - Custom Date/Time Format](https://docs.microsoft.com/en-us/dotnet/standard/base-types/custom-date-and-time-format-strings)

@@ -50,6 +50,6 @@ public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
 }
 ~~~
 
-# References
+## References
 
-- https://docs.microsoft.com/en-us/aspnet/core/host-and-deploy/linux-nginx?view=aspnetcore-3.1#configure-a-reverse-proxy-server
+***--*** [docs.microsoft.com - Configure a Reverse Proxy Server](https://docs.microsoft.com/en-us/aspnet/core/host-and-deploy/linux-nginx?view=aspnetcore-3.1#configure-a-reverse-proxy-server)

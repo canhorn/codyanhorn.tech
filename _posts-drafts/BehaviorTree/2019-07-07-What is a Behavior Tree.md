@@ -89,24 +89,24 @@ TODO: Explain the platform context that this system is used in
 
 Standard Overview:
 
-- https://www.gamasutra.com/blogs/ChrisSimpson/20140717/221339/Behavior_trees_for_AI_How_they_work.php
+***--*** https://www.gamasutra.com/blogs/ChrisSimpson/20140717/221339/Behavior_trees_for_AI_How_they_work.php
 Some Really good Blog post on how to implement a Data driven BT:
-- https://web.archive.org/web/20131209105717/http://www.altdevblogaday.com/2011/02/24/introduction-to-behavior-trees/
-- https://web.archive.org/web/20140217141804/http://altdevblogaday.com:80/2011/04/24/data-oriented-streams-spring-behavior-trees/
-- https://web.archive.org/web/20140107101451/http://altdevblogaday.com/2011/07/09/data-oriented-behavior-tree-overview/
+***--*** https://web.archive.org/web/20131209105717/http://www.altdevblogaday.com/2011/02/24/introduction-to-behavior-trees/
+***--*** https://web.archive.org/web/20140217141804/http://altdevblogaday.com:80/2011/04/24/data-oriented-streams-spring-behavior-trees/
+***--*** https://web.archive.org/web/20140107101451/http://altdevblogaday.com/2011/07/09/data-oriented-behavior-tree-overview/
 
 Java Implementation: 
 
-- http://magicscrollsofcode.blogspot.com/2010/12/behavior-trees-by-example-ai-in-android.html
+***--*** http://magicscrollsofcode.blogspot.com/2010/12/behavior-trees-by-example-ai-in-android.html
 
 Python Implementation:
 
-- https://github.com/andosa/treeinterpreter
+***--*** https://github.com/andosa/treeinterpreter
 
 Stack Exchange:
-- https://gamedev.stackexchange.com/questions/51738/behavior-trees-actions-that-take-longer-than-one-tick?rq=1
-- https://gamedev.stackexchange.com/questions/93603/game-ai-behavior-trees-struggles
-- https://medium.com/game-dev-daily/advanced-behavior-tree-structures-4b9dc0516f92
+***--*** https://gamedev.stackexchange.com/questions/51738/behavior-trees-actions-that-take-longer-than-one-tick?rq=1
+***--*** https://gamedev.stackexchange.com/questions/93603/game-ai-behavior-trees-struggles
+***--*** https://medium.com/game-dev-daily/advanced-behavior-tree-structures-4b9dc0516f92
 
 Fluent BT:
-- https://github.com/ashleydavis/Fluent-Behaviour-Tree
+***--*** https://github.com/ashleydavis/Fluent-Behaviour-Tree

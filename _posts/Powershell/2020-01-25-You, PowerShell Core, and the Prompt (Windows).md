@@ -80,4 +80,4 @@ function prompt {
 
 ***Reference Links:***
 
-***--*** https://stackoverflow.com/questions/1287718/how-can-i-display-my-current-git-branch-name-in-my-powershell-prompt
+***--*** [stackoverflow.com - PowerShell Prompt](https://stackoverflow.com/questions/1287718/how-can-i-display-my-current-git-branch-name-in-my-powershell-prompt) 
