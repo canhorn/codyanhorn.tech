@@ -16,10 +16,15 @@ The first thing is to split the actions into discrete NLA Tracks you want to exp
 
 ***Step One***
 
-![This is an image shows the expected NLA Tracks that should be configured for a clean export.](/image/Posts/Blender/2020-02-16/StepOne.png)
+![This is an image that shows the expected NLA Tracks that should be configured for a clean export.](/image/Posts/Blender/2020-02-16/StepOne.png)
 This is an image shows the expected NLA Tracks that should be configured for a clean export.
 
 ***Step Two*** 
 
-![This is an image show the flag location for enabling the export of NLA Strips during Export.](/image/Posts/Blender/2020-02-16/StepTwo.png)
+![This is an image showing the flag location for enabling the export of NLA Strips during Export.](/image/Posts/Blender/2020-02-16/StepTwo.png)
 This is an image show the flag location for enabling the export of NLA Strips during Export.
+
+***Exported Animations*** 
+
+![This is an image showing the exported animations.](/image/Posts/Blender/2020-02-16/ExportedAnimations.png)
+This is an image showing the exported animations.
