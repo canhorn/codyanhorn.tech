@@ -5,6 +5,7 @@ title: What is a Behavior Tree?
 ---
 
 ## In the context of a Video Game
+
 It is a graph that dictates the state transitions an Game Agent or Actor will make.
 
 ## My usage
@@ -37,8 +38,21 @@ This is just a high level overview of the Traversal nodes used by my platform, a
 - **Actions:** We can think of these as ways for the BT to act on the Agent.
 - **Conditions:** This is a node that will/should only check the state of an Agent or the World to return a SUCCESS/FAILURE response/status.
 
+### Node States
 
-TODO: Explain actions in more detail
+- **Ready:** This node is prepared to process actions or traversal. 
+- **Visiting:** This node has been entered and is either processing leaf nodes or process results.
+- **Failed:** The node ran a set of pre-determined conditions it deemed as Failed, not to be confused with an Error Status.
+- **Running:** The node is either ready to process further or it wants to be queued for future a future check.
+- **Success:** The node has finished with a set of pre-determined conditions it deemed as a Success. 
+- **Error:** The node has experienced a non-deterministic condition it could not classify.
+
+## Finer Details
+
+### Actions
+
+Actions are a way run mutations on the Actor or the world around them. They might run for one simulation tick, one frame, or might need to be ticked for multiple frames to finish their work. 
+
 
 TODO: Explain how the Kernel Works
 
