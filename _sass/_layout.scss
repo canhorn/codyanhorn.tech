@@ -71,8 +71,9 @@ time {
 }
 
 .container {
+    width: 100%;
     max-width: $content-width;
-    margin: 0 auto;
+    margin: 0px;
 }
 
 .skip-main {
