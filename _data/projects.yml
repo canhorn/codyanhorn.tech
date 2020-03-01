@@ -1,0 +1,196 @@
+- id: personal-identity-server
+  title: Personal Identity Server
+  backgroundUrl: /image/Projects/EventHorizon.Identity.Server/Background.png
+  scopedUrl: /image/Projects/EventHorizon.Identity.Server/Scoped.png
+  tagline: Personal Identity server implementation with User, Client, and Resource Administration.
+  tags:
+    - Website
+    - Identity Management
+    - IdentityServer 4
+  links:
+    - class: site
+      title: Website
+      href: https://ehz-identity-demo.azurewebsites.net/
+      icon: fas fa-globe-americas
+  images:
+    - href: /image/Projects/EventHorizon.Identity.Server/Home Page.png
+      title: Identity Server Home Page
+      alt: The home page of EventHorizon Identity Server
+      description: The Landing Page of the Identity Server.
+    - href: /image/Projects/EventHorizon.Identity.Server/Client List Page.png
+      title: List of Clients Page
+      alt: This image shows the list of currently configured Clients on the server.
+      description: List of Clients setup on the server.
+    - href: /image/Projects/EventHorizon.Identity.Server/Client Edit Page.png
+      title: Client Edit Page
+      alt: This image shows what an Administrator can configure for a Client.
+      description: The Client Edit page, shows what an Administrator can configure.
+    - href: /image/Projects/EventHorizon.Identity.Server/Login Page.png
+      title: User Login Page
+      alt: This image shows the Login Page of the Identity Server.
+      description: The User Login Page, with reset password and registration links.
+    - href: /image/Projects/EventHorizon.Identity.Server/Client Consent Page.png
+      title: User Client Consent Page
+      alt: This image show the Page the user will see when they are Consenting to Client permissions.
+      description: User Client Consent Page, the user will confirm the permissions to a Client.   
+    - href: /image/Projects/EventHorizon.Identity.Server/Account Page.png
+      title: User Account Details Page
+      alt: This page is the User Account details page.
+      description: User Account Details Page, allowing the User to manage their Account details.
+    - href: /image/Projects/EventHorizon.Identity.Server/Enable 2FA Page.png
+      title: User Account Enable 2FA Page
+      alt: This image show the user enabling Two Factor Authentication on their account.
+      description: User Account Enable 2FA Page, allows the user to setup Two Factor Authentication for their Account.
+    - href: /image/Projects/EventHorizon.Identity.Server/Client Access Page.png
+      title: Client Access Page
+      alt: This image show the page the user can use to Revoke Access for a Client.
+      description: Client Access Page, this page lists the Clients the User gave permissions too.
+    - href: /image/Projects/EventHorizon.Identity.Server/Purge Account Page.png
+      title: Purge Account Page
+      alt: This image show the page the user will use to Delete their account.
+      description: Purge Account Page, allows the user to remove all of their data from the Identity Server.
+    - href: /image/Projects/EventHorizon.Identity.Server/Resource List Page.png
+      title: Administrator Resource List Page
+      alt: This image show a list of API Resource the Identity Server has configured.
+      description: Administrator Resource List Page, can be used to see what resources are available to clients.
+    - href: /image/Projects/EventHorizon.Identity.Server/Resource Edit Page.png
+      title: Administrator Resource Edit Page
+      alt: This image show the API Resource edit page for an Administrator.
+      description: Administrator Resource Edit Page, can be used to edit Claims and Scope on an API resource.
+- id: eventhorizon-desktop-blazor
+  title: EventHorizon Desktop Blazor
+  backgroundUrl: /image/Projects/EventHorizon.Desktop.Blazor/Background.png
+  scopedUrl: /image/Projects/EventHorizon.Desktop.Blazor/Scoped.png
+  tagline: Pocket Immortal is a play anywhere game, the point of the game it go on adventures with your Immortal.
+  tags:
+    - Application
+    - GitHub
+    - .NET Core Blazor
+    - .NET WebWindow
+  links:
+    - class: github
+      title: GitHub
+      href: https://github.com/canhorn/EventHorizon.Desktop.Blazor
+      icon: fab fa-github
+  images:
+    - href: /image/Projects/EventHorizon.Desktop.Blazor/Application Window.png
+      title: Application Window
+      alt: This image is of the Application started up in a Web Window.
+      description: Application Window, this is the application running in a desktop application window.
+- id: eventhorizon-pocket-immortal
+  title: EventHorizon Pocket Immortal
+  backgroundUrl: /image/Projects/EventHorizon.Pocket.Immortal/Background.png
+  scopedUrl: /image/Projects/EventHorizon.Pocket.Immortal/Scoped.png
+  tagline: Pocket Immortal is a play anywhere game, the point of the game it go on adventures with your Immortal.
+  tags:
+    - Game
+    - BabylonJS
+    - TypeScript
+    - ReactJS
+  links:
+    - class: site
+      title: Website
+      href: https://ehz-pocket-immortal-demo.azurewebsites.net/
+      icon: fas fa-globe-americas
+  images:
+    - href: /image/Projects/EventHorizon.Pocket.Immortal/Game Home Screen.png
+      title: Game Home Screen
+      alt: This image is of the home screen of the game.
+      description: This is the home screen, showing distance traveled, rewards, and a button to step forward.
+    - href: /image/Projects/EventHorizon.Pocket.Immortal/Crafty Screen.png
+      title: Main Crafting Screen
+      alt: This image is of the Crafting Screen in the game.
+      description: Main crafting screen showing that a Skill Charm can be crafted.
+    - href: /image/Projects/EventHorizon.Pocket.Immortal/Farm Seed Selector.png
+      title: Seed Selector for Farm Plot
+      alt: This image contains the screen used to select a seed for a plot.
+      description: The User Interface used to select a seed to plant in a plot.
+    - href: /image/Projects/EventHorizon.Pocket.Immortal/My Inventory Screen.png
+      title: User Inventory Screen
+      alt: This image is of the Users Inventory Screen.
+      description: The current collection of inventory the user has.
+    - href: /image/Projects/EventHorizon.Pocket.Immortal/Reward Selection Screen.png
+      title: Reward Selection Screen
+      alt: This is an image of a screen the users can use to select rewards.
+      description: This screen allows the user to select rewards using the rewards from their walks.
+    - href: /image/Projects/EventHorizon.Pocket.Immortal/Your Farm Screen.png
+      title: Screen of the Users Farm
+      alt: Contains a list of the users plants.
+      description: Shows the time left till plants can be harvested.
+- id: eventhorizon-shimeji
+  title: EventHorizon Shimeji
+  backgroundUrl: /image/Projects/EventHorizon.Shimeji/Background.png
+  scopedUrl: /image/Projects/EventHorizon.Shimeji/Scoped.png
+  tagline: This is a site I created using JavaScript that is able to use character Shimeji data, along with action animations and simple AI choice.
+  tags:
+    - Website
+    - Animations
+    - Artificial Intelligence
+  links:
+    - class: website
+      title: Example
+      href: https://canhorn.github.io/EventHorizon.Shimeji/
+      icon: fas fa-globe-americas
+    - class: github
+      title: GitHub
+      href: https://github.com/canhorn/EventHorizon.Shimeji
+      icon: fab fa-github
+  images:
+    - href: /image/Projects/EventHorizon.Shimeji/Preview Page.png
+      title: Preview/Debugging Page
+      alt: This image shows the play area for a Shimeji.
+      description: Preview/Debugging Page, this page can be used to trigger different actor states.
+- id: twitch-client
+  title: Twitch Client
+  backgroundUrl: /image/Projects/Twitch.Client/Background.png
+  scopedUrl: /image/Projects/Twitch.Client/Scoped.png
+  tagline: This is a web based Twitch Client, showing off that a simple application can be created in the cloud to manage a twitch chat. 
+  tags:
+    - Website
+    - Twitch
+    - .NET Core
+  links:
+    - class: site
+      title: Website
+      href: https://ehz-pocket-immortal-demo.azurewebsites.net/
+      icon: fas fa-globe-americas
+  images:
+    - href: /image/Projects/Twitch.Client/Dark Theme.png
+      title: Twitch Client in the Dark Theme.
+      alt: This image show the view with the Dark Theme enabled.
+      description: The home page in a Dark Theme.
+    - href: /image/Projects/Twitch.Client/Desktop.png
+      title: Twitch Client at the Desktop screen width
+      alt: This image show the layout of the UX in a Desktop width.
+      description: The view of the Home page at a Desktop Width.
+    - href: /image/Projects/Twitch.Client/Mobile.png
+      title: Twitch Client at Mobile screen width
+      alt: This image show the layout of the UX in a Mobile width.
+      description: The view of the home page at a Mobile resolution.
+    - href: /image/Projects/Twitch.Client/Settings.png
+      title: Twitch Client supported settings UX
+      alt: This image contains a details view of th supported settings.
+      description: The settings modal showing supported customization.
+- id: movie-list-tracker
+  title: Movie List Tracker
+  backgroundUrl: /image/Projects/EventHorizon.Movie.Tracker/Background.png
+  scopedUrl: /image/Projects/EventHorizon.Movie.Tracker/Scoped.png
+  tagline: Personal Movie Collection Tracking Website, with search and Random selection.
+  tags:
+    - Website
+    - CRUD
+    - FireBase
+    - AngularJS (1.3)
+  images:
+    - href: /image/Projects/EventHorizon.Movie.Tracker/Desktop.png
+      title: Movie Collection Desktop Application
+      alt: The images shows the Desktop resolution for the Movie Collection Tracking website.
+      description: Movie Collection Desktop Application, shows the desktop resolution of the application.
+    - href: /image/Projects/EventHorizon.Movie.Tracker/Mobile.png
+      title: Movie Collection Mobile Application
+      alt: The images shows the Mobile resolution for the Movie Collection Tracking website.
+      description: Movie Collection Mobile Application, shows the mobile resolution of the application.
+    - href: /image/Projects/EventHorizon.Movie.Tracker/Add Movie.png
+      title: Add Movie Modal
+      alt: This image shows the Add Movie modal.
+      description: Add Movie Modal, allows for the addition of new Movies to application.

@@ -1,0 +1,116 @@
+---
+layout: default
+title: Projects
+---
+
+<h1>Projects</h1>
+
+{% for project in site.data.projects %}
+<div class="card">
+    <div
+        class="card__background"
+        style="background-image:url('{{ project.backgroundUrl }}');"
+    ></div>
+    <div class="card__scoped">
+        <img src="{{ project.scopedUrl }}" />
+    </div>
+    <div class="card__stopper"></div>
+    <div class="card__subcard">
+        <div class="card__subcard__title" title="{{ project.title }}">
+            {{ project.title }}
+        </div>
+        <div class="card__subcard__sub">
+            {{ project.tagline }}
+        </div>
+        <div class="card__subcard__tags">
+            {% for tag in project.tags %}
+            <div>{{ tag }}</div>
+            {% endfor %}
+        </div>
+        <div class="card__subcard__bottom-row">
+            <div class="card__subcard__bottom-row__links">
+                {% for link in project.links %}
+                <a
+                    class="{{ link.class }}"
+                    title="{{ link.title }}"
+                    href="{{ link.href }}"
+                    target="_blank"
+                >
+                    <i class="{{ link.icon }}"></i>
+                </a>
+                {% endfor %}
+                <a
+                    href="/project/show-images"
+                    title="Show Images"
+                    onclick="openImages(event, '{{ project.id }}')"
+                >
+                    <i class="far fa-images"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+<div id="modal_{{ project.id }}" class="modal">
+    <div class="modal__content">
+        <div class="gallery__container">
+            {% for image in project.images %}
+            <div class="gallery">
+                <a
+                    target="_blank"
+                    href="{{ image.href }}"
+                    title="{{ image.title }}"
+                >
+                    <div class="gallery__img">
+                        <img src="{{ image.href }}" alt="{{ image.alt }}" />
+                    </div>
+                </a>
+                <div class="gallery__description">{{ image.description }}</div>
+            </div>
+            {% endfor %}
+        </div>
+        <div class="modal__buttons-container">
+            <div class="close-button">
+                <a href="/projects/close-modal" onclick="closeImages(event)">
+                    Close
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+{% endfor %}
+<style>
+    .close-button {
+        color: white;
+        display: inline-block;
+        background: #8855dd;
+        border-radius: 12px;
+        padding: 4px 20px;
+        line-height: 1.7;
+        margin: 4px 4px;
+        height: 35px;
+    }
+    .close-button a {
+        color: inherit;
+        text-decoration: none;
+    }
+</style>
+<script>
+    var openModal = null;
+    function openImages(event, id) {
+        event.preventDefault();
+        var modalSelector = '#modal_' + id;
+        var modal = document.querySelector(modalSelector);
+        modal.style.display = 'block';
+        openModal = modal;
+    }
+    function closeImages(event) {
+        event.preventDefault();
+        openModal.style.display = 'none';
+        openModal = null;
+    }
+    window.onclick = function(event) {
+        if (event.target === openModal) {
+            openModal.style.display = 'none';
+        }
+    };
+</script>
