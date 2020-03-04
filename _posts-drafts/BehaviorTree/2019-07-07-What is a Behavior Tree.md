@@ -55,6 +55,7 @@ Actions are a way run mutations on the Actor or the world around them. They migh
 
 
 TODO: Explain how the Kernel Works
+The Kernel is the brains of the of the Actor, it takes in the current/prior state of the Actor and the shape of the behavior tree then running it through the interpreters.
 
 TODO: Explain how the state is setup from prior runs of an Actor
 
