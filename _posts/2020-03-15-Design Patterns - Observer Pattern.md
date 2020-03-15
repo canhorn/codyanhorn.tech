@@ -41,7 +41,7 @@ Here is project:
 
     public async Task HandleIncrementCount()
     {
-        CountStateActions.Increment();
+        await CountStateActions.Increment();
     }
 }
 ~~~
@@ -49,57 +49,56 @@ Here is project:
 ***ViewCount.razor***
 ~~~ html
 
-<div>
-    @Count
-</div>
+@Count
 
 ~~~
 
 ***ViewCount.razor.cs***
 ~~~ csharp
+using EventHorizon.Blazor.Pattern.Observer.Count;
+using EventHorizon.Blazor.Pattern.Observer.Count.Observers;
+using EventHorizon.Observer.Register;
+using System;
+using MediatR;
+using Microsoft.AspNetCore.Components;
+using System.Threading.Tasks;
+using EventHorizon.Observer.Unregister;
 
-public ViewCountModel : ComponentBase, IDisposable, CountStateChangedObserver
+// The CountStateChangedObserver make this class an observer of the CountState
+public class ViewCountModel : ComponentBase, IDisposable, CountStateChangedObserver
 {
     [Inject]
-    public CountState CountState { get; set; }
-    [Inject]
     public IMediator Mediator { get; set; }
+    [Inject]
+    public CountState CountState { get; set; }
 
-    public int Count { get; set; }
+    protected int Count { get; private set; }
 
-    
-    protected override async Task OnInitialized()
+    protected override async Task OnInitializedAsync()
     {
+        Count = CountState.Count;
+        // Register this observer, so it can be triggered
         await Mediator.Send(
             new RegisterObserverCommand(this)
         );
-        HandleCountChanged();
     }
 
-    // This is will handle any changes to the CountState
-    // What is nice about C# and its typing allows multiple Observers to be handle.
-    // The Args parameter is what dictates which handler will get called.
-    public Task Handle(
+    // Typed Handler for CountState Changes
+    public async Task Handle(
         CountStateChangedObserverArgs args
     )
     {
-        HandleCountChanged();
-        InvokeAsync(StateChange);
-        return Task.Completed;
+        Count = CountState.Count;
+
+        await InvokeAsync(StateHasChanged);
     }
 
     public void Dispose()
     {
+        // When this Component is disposed, no longer need to observer state changes.
         Mediator.Send(
-            new UnregisterObserverCommand(
-                this
-            )
+            new UnregisterObserverCommand(this)
         ).ConfigureAwait(false).GetAwaiter().GetResult();
-    }
-
-    private void HandleZoneStateChange()
-    {
-        Count = CountState.Count;
     }
 }
 ~~~
