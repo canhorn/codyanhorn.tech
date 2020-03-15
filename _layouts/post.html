@@ -7,4 +7,11 @@ layout: default
 
 {{ content }}
 
+<hr />
+<p>
+    Categories: {% for category in page.categories %} {{ category }} {% endfor
+    %}
+</p>
+<p>Tags: {% for tag in page.tags %} {{ tag }} {% endfor %}</p>
+
 {% include signature.html %}

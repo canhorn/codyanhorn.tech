@@ -2,6 +2,8 @@
 layout: post
 author: Cody Merritt Anhorn
 title: Blazor Dynamic JavaScript Runner
+categories: [blog, blazor]
+tags: [.NET, C#, Blazor]
 ---
 
 Even with Blazor you still need to use javascript in some form or fashion. And with this post we will go over how to create a simple JavaScript runner. The runner will just take a method identifier, the script as a string, and some arguments in the form of a simple object in C#.

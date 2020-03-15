@@ -2,6 +2,8 @@
 layout: post
 author: Cody Merritt Anhorn
 title: Design Patterns - Composite Pattern
+categories: [blog, design_pattern]
+tags: [Design Pattern, Composite]
 ---
 
 I personally use the composite pattern in my game design quite heavily, to start off the composite pattern can be seen a taking a single entity and attaching functionality to it by adding other entities to it.

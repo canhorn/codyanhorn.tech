@@ -2,6 +2,8 @@
 layout: post
 author: Cody Merritt Anhorn
 title: Game Client Refactor
+categories: [blog, game_development]
+tags: [updates, refactor]
 ---
 
 In an effort to make my Game Client more modular and also update the hosting server, I decided it was time to refactor my current solution into three main areas: Clients, Servers, and Shared. This allowed me to better structure the areas of the Client and setup for future enhancements to the Game Development Platform. 

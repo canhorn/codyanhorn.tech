@@ -1,7 +1,9 @@
 ---
 layout: post
 author: Cody Merritt Anhorn
-title: Game Development 2020.09.02
+title: Game Development 2020.02.09
+categories: [blog, game_development]
+tags: [updates]
 ---
 
 The past week I worked on getting a Desktop client created and learning Blender. Time was spend creating and rigging the base Fire Immortal model, this will allow for easier creation of animations. 

@@ -2,6 +2,8 @@
 layout: post
 author: Cody Merritt Anhorn
 title: Using Docker as Part of a Build Pipeline
+categories: [blog, architecture]
+tags: [docker, scss, nodejs]
 ---
 
 Docker is a great technology, allowing for quick and easy development of software. Using Docker you can create a consistent deployment artifact, and in the post I will go over how I use Docker. To help simplify my build pipeline by running NodeJS build commands and running more complicated .NET script's.

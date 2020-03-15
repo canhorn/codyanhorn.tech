@@ -2,6 +2,8 @@
 layout: post
 author: Cody Merritt Anhorn
 title: Using calc with a SCSS Variable
+categories: [blog]
+tags: [scss]
 ---
 
 To use a variable in the CSS calc use SCSS [Interpolation](https://sass-lang.com/documentation/interpolation), example below.

@@ -2,6 +2,8 @@
 layout: post
 author: Cody Merritt Anhorn
 title: C# Tip of the Day 2020.01.15
+categories: [blog, dotnet]
+tags: [.NET, C#, C# Enumerable]
 ---
 
 Want a quick and dirty way to randomly order a list in C#, use the OrderBy like below.

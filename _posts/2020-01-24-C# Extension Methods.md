@@ -2,6 +2,8 @@
 layout: post
 author: Cody Merritt Anhorn
 title: C# Extension Methods
+categories: [blog, dotnet]
+tags: [.NET, C#, Null]
 ---
 
 Use Extension methods to add functionality to already compiled/existing objects, doing so allows for simplified abstractions to be created for complex objects. This also allows for the ability to extend primitive types or framework provided objects.

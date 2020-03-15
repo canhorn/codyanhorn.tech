@@ -2,6 +2,8 @@
 layout: post
 author: Cody Merritt Anhorn
 title: Game Development 2020.02.01
+categories: [blog, game_development]
+tags: [updates]
 ---
 
 This post will only details a few things done, but a whole lot of work was done at a solution level for the Client, <a href="/2020/02/04/Game-Client-Refactor.html" title="Post detailing the Game Client Solution Refactor.">Game Client Refactor</a>.

@@ -2,6 +2,8 @@
 layout: post
 author: Cody Merritt Anhorn
 title: Blender 2.80+ - Including Animations in GLTF Export
+categories: [blog, blender]
+tags: [Blender]
 ---
 
 One thing I found lacking in the world is how to correctly export Animations from Blender using the GLTF Export Plugin. Since a few flags need to be in place for this to work correctly I though I would share my findings to help remind me later.

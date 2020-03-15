@@ -2,6 +2,8 @@
 layout: post
 author: Cody Merritt Anhorn
 title: ASP.NET Core CORS Policy Setup
+categories: [blog, dotnet]
+tags: [.NET, C#, CORS]
 ---
 
 With ASP.NET Core it has become quite easy to setup CORS for a server. Using the built in libraries we are able with a few lines of code setup CORS and accept requests from a whitelist of Origins.

@@ -2,6 +2,8 @@
 layout: post
 author: Cody Merritt Anhorn
 title: Pickup a Proxies SSL Headers in an ASP.NET Core Hosted Container
+categories: [blog, dotnet]
+tags: [.NET, C#, Proxy]
 ---
 
 One issue that is pretty tricky to setup is to correctly proxy SSL to a container. This issue usually does not affect much, just if the server should redirect to an https request, or in my case backend redirect URL generation.

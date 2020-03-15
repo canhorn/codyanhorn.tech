@@ -2,6 +2,8 @@
 layout: post
 author: Cody Merritt Anhorn
 title: Game Development 2020.03.14
+categories: [blog, game_development]
+tags: [updates]
 ---
 
 This past week has been focused on Entity management and consistency between the Client and Zone. For one we made some platform updates to the way Movement works, enhanced the Follow Owner behavior script, and general fixes around entity management.

@@ -2,6 +2,8 @@
 layout: post
 author: Cody Merritt Anhorn
 title: ShortUrl Service with GitHub Pages
+categories: [blog]
+tags: [github]
 ---
 
 Did you know with GitHub page you can create a simple ShortUrl server?

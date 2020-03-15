@@ -2,6 +2,8 @@
 layout: post
 author: Cody Merritt Anhorn
 title: ElectronJS Gotcha
+categories: [blog]
+tags: [javascript, electronjs]
 ---
 
 When creating an ElectronJS application and your trying to control the install location.

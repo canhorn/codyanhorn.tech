@@ -2,6 +2,8 @@
 layout: post
 author: Cody Merritt Anhorn
 title: Adding Statically Typed Configuration to ASP.NET Core DI
+categories: [blog, dotnet]
+tags: [.NET, C#]
 ---
 
 This is a short and sweet post, it should give you a general idea on how to add typed Configuration/Settings to the .NET Core/ASP.NET Core Dependency Injection container.

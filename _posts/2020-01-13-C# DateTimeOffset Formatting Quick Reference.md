@@ -2,6 +2,8 @@
 layout: post
 author: Cody Merritt Anhorn
 title: C# DateTimeOffset Formatting Quick Reference
+categories: [blog, dotnet]
+tags: [.NET, C# DateTime, C#]
 ---
 
 This post is a quick reference for the DateTime/DateTimeOffset formatting. Using the .ToString you can pass in a string, using the below "Format" text, you can get example text below. You can mix and match the formats and create your own custom formatted dates.

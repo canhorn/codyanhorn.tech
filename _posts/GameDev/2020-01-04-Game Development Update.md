@@ -2,6 +2,8 @@
 layout: post
 author: Cody Merritt Anhorn
 title: Game Development 2020.01.04
+categories: [blog, game_development]
+tags: [updates]
 ---
 
 Worked on getting a VoxEdit export into the game. I plan on using VoxEdit to create my Voxel art models. Since VoxEdit comes with a rigger and animation engine it should help to stream line the process a bit.

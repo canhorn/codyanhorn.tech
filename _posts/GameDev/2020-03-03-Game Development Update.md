@@ -2,6 +2,8 @@
 layout: post
 author: Cody Merritt Anhorn
 title: Game Development 2020.03.03
+categories: [blog, game_development]
+tags: [updates]
 ---
 
 Since the last update on 2020.02.09, their was been a lot of work across the board. Added a way to get details about the internals of the running game client externally, I made some changes to the way the terminal works in the Editor, added Entity management to the editor as well. More details provided below.

@@ -2,6 +2,8 @@
 layout: post
 author: Cody Merritt Anhorn
 title: Blazor Server as Desktop Application
+categories: [blog, blazor]
+tags: [.NET, C#, blazor]
 ---
 
 In this post we will go through my personal code used to create an Desktop Application. Using the WebWindow and an ASP.NET Core Blazor Server I can create a Desktop application that looks and behaves like a native application. Using this setup I am able to use my knowledge of website creation to expedite my creation of a desktop application, since I find it easier to think of my desktop applications in the manner.

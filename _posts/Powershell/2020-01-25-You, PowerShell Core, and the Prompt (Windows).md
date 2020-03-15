@@ -3,6 +3,8 @@ layout: post
 author: Cody Merritt Anhorn
 title: You, PowerShell Core, and the Prompt (Windows)
 excerpt_separator: <!--more-->
+categories: [blog, powershell]
+tags: [Powershell]
 ---
 
 We will go over how to create a new prompt display for PowerShell Core (Windows).
