@@ -2,7 +2,7 @@
 layout: post
 author: Cody Merritt Anhorn
 title: Blazor - How to Create a Code-Behind Model
-categories: [blog, asdf, blazor]
+categories: [blog, blazor]
 tags: [.NET, C#, blazor]
 ---
 
