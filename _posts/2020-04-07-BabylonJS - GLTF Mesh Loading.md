@@ -41,7 +41,7 @@ BABYLON.SceneLoader.ImportMesh(
 
 ## Live Example
 
-Below is a very simple application, showing off a sphere in space.
+Below is an example of a model loaded in using the SceneLoader.ImportMesh for a GLTF mesh.
 
 <script src="https://code.jquery.com/pep/0.4.2/pep.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/dat-gui/0.6.2/dat.gui.min.js"></script>
