@@ -1,6 +1,7 @@
 ---
 layout: shorturl
 title: ShortUrl - Cody Merritt Anhorn's Twitter
+sitemap: false
 ---
 
 <script>
