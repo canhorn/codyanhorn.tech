@@ -58,7 +58,7 @@ You can checkout <a href="https://github.com/canhorn/EventHorizon.Blazor.ManualR
 }
 ~~~
 
-***GameAgentDetails.cs (***
+***GameAgentDetails.cs***
 ~~~ csharp
 using Microsoft.AspNetCore.Components;
 using Microsoft.AspNetCore.Components.Rendering;
