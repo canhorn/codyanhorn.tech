@@ -12,7 +12,7 @@ Checkout the <a href="https://github.com/canhorn/EventHorizon.Blazor.Chat" targe
 
 ## The Big Three
 
-In this article I will go over creating a Desktop (Blazor WASM), a Mobile (Mobile Blazor Bindings), and a Website (Blazor Server) all with Blazor as the framework used to create the UX in some for or fashion. I wont go over the full details on how to get these up and running from start to finish, but just how Blazor was used in each application type.
+In this article I will go over creating a Desktop (Blazor WASM), a Mobile (Mobile Blazor Bindings), and a Website (Blazor Server) all with Blazor as the framework used to create the UX in some form or fashion. I wont go over the full details on how to get these up and running from start to finish, but just how Blazor was used in each application type.
 
 The application I choose to show off these three application types is a Chat messaging application. By using SignalR as the service of choice the applications are able to be started up and interface with each other. The other underlying thing to point out is that all the applications inherit from the same model, that uses the .NET SignalR Client to connect up to the SignalR server.
 
