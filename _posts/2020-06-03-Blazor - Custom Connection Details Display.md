@@ -10,7 +10,7 @@ Blazor Server has a standard UX that display the reconnection status of the appl
 
 # Why Customize the Connection Status Display
 
-Most of the time it is just fine to use the supplied UX for this page, but in my usage I wanted a little more control on where and how the content is displayed. In my application, a Bot build in blazor, has some overlays it supplied my OBS in the form of webpages. With these page supplied by my bot I wanted to display an out of the way message, not completely cover my whole overlay but still get details on when the Client looses the connection to the Bot/Website. So by including the HTML and CSS I was able to customize the messaging and how the UX is displayed when their is a connection loss to my bot.
+Most of the time it is just fine to use the supplied UX for this page, but in my usage I wanted a little more control on where and how the content is displayed. In my application, a Bot built in blazor, has webpages overlays that it supplies my OBS. I wanted these pages to display an out of the way message, in not completely covering my whole overlay but still getting notified when the Client looses its connection to the Bot. So I include something similar to the HTML/CSS below to customize the messaging and how the UI is displayed at the loss of the connection to the bot.
 
 <a href="/image/Posts/2020-06-03/Reconnecting_Blazor_Message.png" 
     target="_blank"
@@ -21,13 +21,13 @@ Most of the time it is just fine to use the supplied UX for this page, but in my
 
 ## Where to Start
 
-To start we need to include some HTML in the _Host.cshtml page, this is only supported on the Blazor Server hosting model, since the WASM host does not have a connection to a Server. With the displayed HTML you will want to include some CSS to hide it, the framework will take care of showing the content when a connection state change is picked up. These two pieces allow for a customized UX to be supplied give more control over the where, how and what message is shown.
+To start we need to include some HTML in the _Host.cshtml page, this is only supported on the Blazor Server hosting model, since the WASM host does not have a connection to a Server in most cases. Also with the HTML you will want to include CSS to hide it by default, the framework will take care of adding CSS that can display the content when a connection state change is picked up. These two pieces allow for a customized UI to control the where/what message is shown.
 
 This UX does not come from the default template so will need to be supplied completely by the developer when customizing. The areas to note is the **id**, it has to be **components-reconnect-modal**, this needs to be supplied so the frameworks knows that customization is provided and should not include its own. 
 
 When the different reconnection states are triggered the framework will change the css class on the **components-reconnect-modal** element to one of the following; **components-reconnect-show**, **components-reconnect-hide**, **components-reconnect-failed**, or **components-reconnect-rejected**, checkout <a href="https://docs.microsoft.com/en-us/aspnet/core/blazor/hosting-model-configuration#blazor-server" target="_blank">Microsoft - Blazor Server</a> for more details on each one.
 
-As with the Error UI, when using Blazor Server you have access to the <code>&lt;environment /&gt;</code> tag gaining access to create some very unique content.
+As with the Error UI, because we are using the Blazor Server you have access to the <code>&lt;environment /&gt;</code> tag gaining access to create some very unique content based on a Production or Development application deployment.
 
 **_Host.cshtml**
 ~~~ html
