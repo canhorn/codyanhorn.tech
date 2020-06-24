@@ -6,7 +6,7 @@ categories: [blog]
 tags: [.NET, C#, Docker, NodeJS]
 ---
 
-To simplify my deployment process I use Docker, not many of my project dont use docker in some way or another. I like the flexibility I get from Docker to create my deployment artifacts, and by using Docker I don't have to remember how my artifacts are created. This article is for documenting my standard .NET Core Dockerfile that I can easily reference in the future without remembering what project I have used this kind of Dockerfile in before.
+To simplify my deployment process I use Docker, many of my project use docker in some way or another. I like the flexibility I get from Docker to create my deployment artifacts, and by using Docker I don't have to remember how my artifacts are created. This article is for documenting my standard .NET Core Dockerfile that I can easily reference in the future without remembering what project I have used this kind of Dockerfile in before.
 
 ## Dockerfile
 
