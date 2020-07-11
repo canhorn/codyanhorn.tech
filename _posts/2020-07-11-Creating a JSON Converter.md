@@ -1,7 +1,7 @@
 ---
 layout: post
 author: Cody Merritt Anhorn
-title: Create a JsonConverter
+title: .NET Core - System.Text.Json - Create a JsonConverter
 categories: [blog]
 tags: [.NET, C#, JSON]
 ---
