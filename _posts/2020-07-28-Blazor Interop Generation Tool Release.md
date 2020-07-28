@@ -6,7 +6,7 @@ categories: [blog, blazor]
 tags: [.NET Core, Blazor, WASM]
 ---
 
-This article is the Release blog of my new Blazor Interop Generation Tool! Here I will do a quick overview of the tool and how to use it.
+This article is the Release post of my new Blazor Interop Generation Tool! Here I will do a quick overview of the tool and how to use it.
 
 ## Overview
 
