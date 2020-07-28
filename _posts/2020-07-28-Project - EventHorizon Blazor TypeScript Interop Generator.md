@@ -2,7 +2,7 @@
 layout: post
 author: Cody Merritt Anhorn
 title: Project - EventHorizon Blazor TypeScript Interop Generator
-categories: [blog]
+categories: [blog, blazor]
 tags: [.NET Core, Blazor, WASM]
 ---
 

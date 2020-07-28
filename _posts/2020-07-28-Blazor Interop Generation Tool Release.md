@@ -2,7 +2,7 @@
 layout: post
 author: Cody Merritt Anhorn
 title: Blazor Interop Generation Tool Release
-categories: [blog]
+categories: [blog, blazor]
 tags: [.NET Core, Blazor, WASM]
 ---
 

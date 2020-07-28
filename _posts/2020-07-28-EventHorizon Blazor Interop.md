@@ -2,7 +2,7 @@
 layout: post
 author: Cody Merritt Anhorn
 title: Project - EventHorizon Blazor Interop
-categories: [blog]
+categories: [blog, blazor]
 tags: [.NET Core, Blazor, WASM]
 ---
 
