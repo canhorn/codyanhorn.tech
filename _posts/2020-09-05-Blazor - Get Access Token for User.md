@@ -12,13 +12,12 @@ In this article I show off a quick snippet to get the AccessToken for a logged i
 
 **Index.razor**
 ~~~ html
+@page "/"
 
 <div>
     @AccessToken
 </div>
 
-@code {
-}
 ~~~
 
 **Index.razor.cs**
