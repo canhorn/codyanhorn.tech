@@ -1,14 +1,16 @@
 ---
 layout: post
 author: Cody Merritt Anhorn
-title: Blazor - Get Access Token for User 
+title: Blazor Wasm - Get Access Token for User 
 categories: [blog, blazor]
-tags: [HTML, CSS, JavaScript]
+tags: [Blazor, .NET, C#, Wasm]
 ---
 
-In this article I show off a quick snippet to get the AccessToken for a logged in User. Not much to it just using the <code>IAccessTokenProvider</code>, and if the user is signed in and they have are using an authentication type that provides an access token, like OpenID.
+In this article I show, using ASP.NET Core Blazor Wasm, a quick snippet to get the AccessToken for a logged in User. Not much to it just using the <code>IAccessTokenProvider</code>, and if the user is signed in and they have are using an authentication type that provides an access token, like OpenID.
 
-## Get Access Token from IAccessTokenProvider
+Checkout the <a href="/blog/blazor/2020/09/06/Blazor-Server-Get-Access-Token-for-User-copy.html">Blazor Server - Get Access Token for User</a> article with details on how this can be done for a Blazor Server Application!
+
+## Blazor - Getting Access Token from IAccessTokenProvider
 
 **Index.razor**
 ~~~ html
@@ -36,7 +38,7 @@ public partial class Index : ComponentBase
 
     public string AccessToken { get; set; }
 
-    public override async Task OnInitializedAsync()
+    protected override async Task OnInitializedAsync()
     {
         var accessTokenResult = await TokenProvider.RequestAccessToken();
         AccessToken = string.Empty;
