@@ -6,11 +6,7 @@ categories: [blog, blazor]
 tags: [.NET 5.0, HTML, CSS]
 ---
 
-With this article I will go over the recent updates to the <a href="https://github.com/canhorn/EventHorizon.Blazor.UX" target="_blank">EventHorizon Blazor UX Controls</a>.
-
-
-
-<a href="https://lively-mud-0597d4e10.azurestaticapps.net/" target="_blank">Blazor Wasm Example EventHorizon.Blazor.UX</a>
+With this article I will go over the recent updates to the <a href="https://github.com/canhorn/EventHorizon.Blazor.UX" target="_blank">EventHorizon Blazor UX Controls</a>. Checkout the deployed static website of the sample <a href="https://lively-mud-0597d4e10.azurestaticapps.net/" target="_blank">Blazor Wasm EventHorizon.Blazor.UX</a> using the updated controls.
 
 ## Update to EventHorizon UX Controls
 
