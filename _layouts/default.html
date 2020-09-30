@@ -26,13 +26,11 @@
                 <ul>
                 {% for item in site.data.navigation %}
                     <li>
-                        <a href="{{ item.link }}" {% if page.url == item.link %}style="color: gray; border-bottom: gray solid;"{% endif %}>
+                        <a id="link-{{ item.id }}" href="{{ item.link }}" {% if page.url == item.link %}style="color: gray;"{% endif %}>
                         {{ item.name }}
                         </a>
                     </li>
                 {% endfor %}
-                </ul>
-                </li>
                 </ul>
             </nav>
         </div>

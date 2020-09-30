@@ -122,6 +122,23 @@ title: Cody's Personal Blog
     .back {
         background-color: #000;
     }
+
+    @media screen and (max-width: 600px) {
+        .back h1,
+        .back p,
+        .back .font-a-icons {
+            margin: 0;
+        }
+        .back {
+            background-image: initial;
+            background-color: initial;
+            border: none;
+            /* height: 0px; */
+        }
+        .icon-box-group {
+            margin-left: 0px;
+        }
+    }
 </style>
 
 <div class="back">
@@ -141,14 +158,12 @@ title: Cody's Personal Blog
             </a>
         </div>
         <div class="icon-group">
-            <a id="blog" class="contact" href="/blog" target="_top">
-                Blog
-            </a>
+            <a id="blog" class="contact" href="/blog" target="_top"> Blog </a>
         </div>
         <div class="icon-group">
             <a
                 class="contact"
-                href="https://www.ehzgames.studio"
+                href="https://ehzgames.studio"
                 title="EventHorizon Games Studio Website"
                 target="_blank"
             >
