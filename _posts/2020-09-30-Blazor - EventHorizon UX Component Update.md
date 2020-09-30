@@ -127,7 +127,7 @@ My current plans for this library is to have a centralized control library I can
         Add Form Controls
     </li>
     <li>
-        Added Theme override Control - So the user can edit a theme for the site locally.
+        Added Theme override Control - So the user can edit a theme for the application.
     </li>
 </ul>
 
