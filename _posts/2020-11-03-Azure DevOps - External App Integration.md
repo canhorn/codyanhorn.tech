@@ -6,7 +6,7 @@ categories: [blog]
 tags: [.NET, C#, Azure, DevOps]
 ---
 
-This article will give a hight level overview of the Azure DevOps Rest API, including Authentication all in a Blazor Application.
+This article will give a high level overview of the Azure DevOps Rest API, including Authentication all in a Blazor Application.
 
 ## Why
 
