@@ -3,7 +3,7 @@ layout: post
 author: Cody Merritt Anhorn
 title: .NET - My Workflow Pattern
 categories: [blog]
-tags: [.NET, C#, MediatR]
+tags: [.NET, C#, MediatR, Hangfire]
 ---
 
 This article will go over how I personally use MediatR, Hangfire, and my custom Observer libraries to create a Workflow Pattern for running background process or realtime if I choose.
@@ -41,12 +41,6 @@ The observer pattern I created allows for better integration into the async/awai
     title="The .NET 5 framework website.">
     .NET 5
 </a> - The .NET 5 framework website.
-
-<a href="https://docs.microsoft.com/en-us/aspnet/core/blazor/?view=aspnetcore-5.0" 
-    target="_blank"
-    title="The ASP.NET Core Blazor Docs.">
-    ASP.NET Core Blazor
-</a> - The ASP.NET Core Blazor Docs.
 
 <a href="https://github.com/jbogard/MediatR" 
     target="_blank"
