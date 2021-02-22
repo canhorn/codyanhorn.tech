@@ -24,6 +24,7 @@ I have included the source for my personal implementation of a Database Migratio
 
 ## Source Code
 
+**DatabaseMigration.cs**
 ~~~ csharp
 using System;
 using System.Collections.Generic;
@@ -170,6 +171,7 @@ internal class DatabaseMigration
 }
 ~~~
 
+**0000_MigrationScripts.sql**
 ~~~ sql
 -- Check for existing, skip is already found in Database
 IF NOT EXISTS(SELECT 1 FROM sys.Objects
@@ -183,6 +185,7 @@ BEGIN
 END
 ~~~
 
+**0001_CreateRegistrationTable.sql**
 ~~~ sql
 -- Check for existing, skip is already found in Database
 IF NOT EXISTS(SELECT 1 FROM sys.Objects
