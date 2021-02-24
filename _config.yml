@@ -11,8 +11,17 @@ author:
     uri: https://codyanhorn.tech/
     email: cody.anhorn+blog@hotmail.com
     twitter: CodyAnhorn
+collections:
+  tagged:
+    output: true
 defaults:
     - scope:
         path: ""
       values:
         image: /image/EventHorizonLogo.png
+    - scope:
+        path: ""
+        type: tagged
+      values:
+        layout: "tagged"
+    

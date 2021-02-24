@@ -3,7 +3,7 @@ layout: post
 author: Cody Merritt Anhorn
 title: Blazor - How to Create a Code-Behind Model
 categories: [blog, blazor]
-tags: [.NET, C#, blazor]
+tags: [.NET, C#, Blazor]
 ---
 
 To create a model for your Blazor Component just ***@inherits*** from the model. 😊 Not much else than that is needed, checkout the example below for exact details. 
