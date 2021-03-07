@@ -3,7 +3,7 @@ layout: post
 author: Cody Merritt Anhorn
 title: HTML - Microphone Visualization
 categories: [blog]
-tags: [HTML, OBS]
+tags: [HTML, JavaScript, CSS, Audio]
 ---
 
 In this Article I will go over using HTML and JavaScript to create a simple Talking Avatar using the Mic and a two sprites.
