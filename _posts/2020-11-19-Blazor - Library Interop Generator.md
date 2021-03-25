@@ -65,7 +65,7 @@ For the next section we will first create a custom TypeScript Definition file an
 ~~~ typescript
 export module Blazor.Example {
     export class CustomApi {
-        static CallMyAip(): Promise<string>;
+        static CallMyApi(): Promise<string>;
     }
 }
 ~~~
@@ -96,7 +96,7 @@ Info : === Generate Class Statements
 Info : Took 14ms to generate CustomApi
 Info : === Generated Class Statements | ElapsedTime: 21ms
 Info : === Generate Statements
-Info : Generating Method: public static () =>  Task< string> CallMyAip();
+Info : Generating Method: public static () =>  Task< string> CallMyApi();
 Info : Generating Base Constructor: constructor(){  }
 Info : === Generated Statements | ElapsedTime: 17ms
 Info : === Generating Shimmed Classes
@@ -136,12 +136,12 @@ namespace Blazor.Example
     [JsonConverter(typeof(CachedEntityConverter<CustomApi>))]
     public class CustomApi : CachedEntityObject
     {
-        public static ValueTask<string> CallMyAip()
+        public static ValueTask<string> CallMyApi()
         {
             return EventHorizonBlazorInterop.Task<string>(
                 new object[]
                 {
-                    new string[] { "Blazor", "Example", "CustomApi", "CallMyAip" }
+                    new string[] { "Blazor", "Example", "CustomApi", "CallMyApi" }
                 }
             );
         }
