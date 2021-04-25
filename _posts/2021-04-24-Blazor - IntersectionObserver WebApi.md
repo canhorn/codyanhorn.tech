@@ -20,6 +20,29 @@ The main reason for checking out the IntersectionObserver was to see how the <a 
 
 Checkout a the <a href="https://proud-coast-03b6fa410.azurestaticapps.net/" target="_blank">Static Blazor Wasm Website</a>, also included below you can see the TypeScript definition file and the Source Code generated for the IntersectionObserver. You can checkout the source code in this <a href="https://github.com/canhorn/EventHorizon.Blazor.WebApi.IntersectionObserver" target="_blank">canhorn/EventHorizon.Blazor.WebApi.IntersectionObserver</a> Github repository. It includes the TypeScript definition file and has the generated project to be viewed as well.
 
+**Example of using the generated IntersectionObserver in a Blazor application.**
+~~~ csharp
+var observer = new IntersectionObserver(
+    new ActionCallback<IntersectionObserverEntry[], IntersectionObserver>(
+        (entries, other) =>
+        {
+            var intersectedEntries = entries.Where(a => a.isIntersecting);
+            foreach (var intersectedEntry in intersectedEntries)
+            {
+                Console.WriteLine(intersectedEntry.target.id, intersectedEntry.intersectionRatio);
+                last.innerHTML = intersectedEntry.target.id + " : " + intersectedEntry.intersectionRatio;
+            }
+            return Task.CompletedTask;
+        }
+    ),
+    new IntersectionObserverInitCachedEntity
+    {
+        // Here is the Element we are Observing for Intersection
+        root = parent
+    }
+);
+~~~
+
 **The TypeScript definition file used to generate the .NET C# project.**
 ~~~ typescript
 class IntersectionObserver {
