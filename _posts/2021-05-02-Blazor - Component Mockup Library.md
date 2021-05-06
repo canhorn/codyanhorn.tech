@@ -6,7 +6,7 @@ categories: [blog, blazor]
 tags: [.NET, C#, Blazor, Wasm, PWA]
 ---
 
-This article we will go over the EventHorizon Blazor Mockup library, simplifying the processor of building, documenting, and testing Blazor/Razor Components.
+This article we will go over the EventHorizon Blazor Mockup library, simplifying the process of building, documenting, and testing Blazor/Razor Components.
 
 <a href="/image/Posts/2021-05-02/Mockup-Preview.png" target="_blank">
     <img src="/image/Posts/2021-05-02/Mockup-Preview.png" title="The display of the Rendered Mockup UI of the AwesomeUI Component." />
