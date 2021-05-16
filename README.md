@@ -1,4 +1,4 @@
-This is the personal blog of Cody Merritt Anhorn. (hi)
+This is the personal blog of Cody Merritt Anhorn.
 
 # Development  
 
