@@ -1,6 +1,6 @@
-@import './cards';
-@import './modal';
-@import './gallery';
+@import "./cards";
+@import "./modal";
+@import "./gallery";
 
 body {
     margin: 0;
@@ -80,12 +80,6 @@ time {
     color: #898989;
 }
 
-.container {
-    width: 100%;
-    max-width: $content-width;
-    margin: 0px;
-}
-
 .skip-main {
     left: -999px;
     position: absolute;
@@ -112,54 +106,139 @@ a.skip-main:active {
     z-index: 999;
 }
 
-/* Aside */
+/* Aside - Nav Menu */
 
-aside {
+// aside {
+//     background: $header-nav;
+//     width: 100%;
+//     z-index: 2;
+//     border-bottom: 1px solid lighten($light, 30%);
+//     box-shadow: 0px 1px 1px RGBA(4, 25, 54, 0.1);
+
+//     nav {
+//         margin: 0 auto;
+
+//         ul {
+//             margin: 0;
+//             padding: 0;
+//             list-style: none;
+
+//             li {
+
+//                 a {
+//                     text-decoration: none;
+//                     display: block;
+//                     padding: 15px;
+//                     font-family: 'Muli', sans-serif;
+//                     line-height: 20px;
+//                     margin-bottom: -1px;
+//                     box-shadow: 0;
+//                     color: $nav-color;
+
+//                     &:hover,
+//                     &:active {
+//                         text-decoration: none;
+//                         background: $header;
+//                         color: $nav-color;
+//                     }
+//                 }
+//             }
+//         }
+
+//         &:after {
+//             content: '';
+//             display: table;
+//             clear: both;
+//         }
+//     }
+// }
+
+.nav-menu {
+    color: var(--nav-color);
+    text-align: center;
     background: $header-nav;
     width: 100%;
     z-index: 2;
     border-bottom: 1px solid lighten($light, 30%);
     box-shadow: 0px 1px 1px RGBA(4, 25, 54, 0.1);
+}
 
-    nav {
-        float: left;
-        max-width: 800px;
-        margin: 0 auto;
+.nav-menu__brand {
+    color: white;
+    font-weight: bold;
+    font-size: 1.3rem;
+    /* vertical-align: middle; */
+    height: 100%;
+}
 
-        ul {
-            margin: 0;
-            padding: 0;
-            list-style: none;
+.nav-menu-hamburger {
+    color: white;
+    padding: 10px 15px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+    transition-property: opacity, filter;
+    transition-duration: 0.15s;
+    transition-timing-function: linear;
+    font: inherit;
+    color: inherit;
+    text-transform: none;
+    background-color: transparent;
+    border: 0;
+    overflow: visible;
+}
 
-            li {
-                float: left;
-                position: relative;
+.nav-menu-hamburger:focus {
+    outline-width: 0;
+    box-shadow: var(--color-primary) 0 0 0 0.25rem;
+    transition: box-shadow var(--global-transition-time) ease 0s;
+}
 
-                a {
-                    text-decoration: none;
-                    display: block;
-                    padding: 15px;
-                    font-family: 'Muli', sans-serif;
-                    line-height: 20px;
-                    margin-bottom: -1px;
-                    box-shadow: 0;
-                    color: $nav-color;
+.nav-menu-hamburger__text {
+    color: white;
+    font-size: 2rem;
+}
 
-                    &:hover,
-                    &:active {
-                        text-decoration: none;
-                        background: $header;
-                        color: $nav-color;
-                    }
-                }
-            }
-        }
+.nav-menu__list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
 
-        &:after {
-            content: '';
-            display: table;
-            clear: both;
-        }
+.nav-menu__list.--hidden {
+    display: none;
+}
+
+.nav-menu__list-item {
+}
+
+.nav-menu__list-item-link {
+    text-decoration: none;
+    display: block;
+    padding: 15px;
+    font-family: "Muli", sans-serif;
+    line-height: 20px;
+    margin-bottom: -1px;
+    box-shadow: 0;
+    color: $nav-color;
+
+    &:hover,
+    &:active {
+        text-decoration: none;
+        background: $header;
+        color: $nav-color;
+    }
+}
+
+@media screen and (min-width: 600px) {
+    .nav-menu-hamburger {
+        display: none;
+    }
+
+    .nav-menu__list,
+    .nav-menu__list.--hidden {
+        display: flex;
     }
 }
 
@@ -195,7 +274,7 @@ blockquote {
     border-left: 10px solid #ccc;
     margin: 1.5em 10px;
     padding: 0.5em 10px;
-    quotes: '\201C''\201D''\2018''\2019';
+    quotes: "\201C""\201D""\2018""\2019";
 }
 blockquote:before {
     color: #ccc;

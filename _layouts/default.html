@@ -20,21 +20,38 @@
 
 <body>
     <a class="skip-main" href="#content">Skip to main content</a>
-    <aside>
-        <div class="container">
-            <nav>
-                <ul>
-                {% for item in site.data.navigation %}
-                    <li>
-                        <a id="link-{{ item.id }}" href="{{ item.link }}" {% if page.url == item.link %}style="color: gray;"{% endif %}>
-                        {{ item.name }}
-                        </a>
-                    </li>
-                {% endfor %}
-                </ul>
-            </nav>
-        </div>
-    </aside>
+
+    <nav class="nav-menu">
+        <div class="nav-menu__brand">Cody Merritt Anhorn</div>
+        <button class="nav-menu-hamburger" 
+                aria-expanded="false" 
+                aria-label="Menu Toggle"
+                onclick="ToggleNavMenuList()">
+            <span class="nav-menu-hamburger__text">
+                <i class="fas fa-bars"></i> Menu
+            </span>
+        </button>
+        <script>
+            function ToggleNavMenuList()
+            {
+                const list = document.querySelector(".nav-menu__list");
+                if (list.classList.contains("--hidden")) {
+                    list.classList.remove("--hidden");
+                } else {
+                    list.classList.add("--hidden");
+                }
+            }
+        </script>
+        <ul class="nav-menu__list --hidden">
+        {% for item in site.data.navigation %}
+            <li class="nav-menu__list-item">
+                <a class="nav-menu__list-item-link" id="link-{{ item.id }}" href="{{ item.link }}" {% if page.url == item.link %}style="color: gray;"{% endif %}>
+                {{ item.name }}
+                </a>
+            </li>
+        {% endfor %}
+        </ul>
+    </nav>
     <main id="content" class="main-content" role="main">
         {{ content }}
     </main>
