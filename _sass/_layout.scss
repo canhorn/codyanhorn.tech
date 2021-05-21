@@ -219,12 +219,12 @@ a.skip-main:active {
     padding: 15px;
     font-family: "Muli", sans-serif;
     line-height: 20px;
-    margin-bottom: -1px;
-    box-shadow: 0;
+
     color: $nav-color;
 
     &:hover,
-    &:active {
+    &:active,
+    &.--active {
         text-decoration: none;
         background: $header;
         color: $nav-color;

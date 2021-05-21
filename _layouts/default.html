@@ -45,7 +45,7 @@
         <ul class="nav-menu__list --hidden">
         {% for item in site.data.navigation %}
             <li class="nav-menu__list-item">
-                <a class="nav-menu__list-item-link" id="link-{{ item.id }}" href="{{ item.link }}" {% if page.url == item.link %}style="color: gray;"{% endif %}>
+                <a class="nav-menu__list-item-link {% if page.url == item.link %}--active{% endif %}" id="link-{{ item.id }}" href="{{ item.link }}">
                 {{ item.name }}
                 </a>
             </li>

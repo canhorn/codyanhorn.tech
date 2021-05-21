@@ -3,7 +3,12 @@ layout: default
 title: Blog
 ---
 
-<h1>Latest Posts</h1>
+{% if paginator.page == 1 %}
+    <h1>Latest Posts</h1>
+{% else %}
+    <h1>Blog Post(s) for Page {{ paginator.page }}</h1>
+{% endif %}
+
 
 <ul style="list-style-type: none">
     {% for post in paginator.posts %}
